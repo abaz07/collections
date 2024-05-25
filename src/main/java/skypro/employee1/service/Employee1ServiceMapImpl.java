@@ -6,9 +6,13 @@ import skypro.employee1.exceptions.EmployeeNotFoundException;
 import skypro.employee1.exceptions.EmployeeStorageIsFullException;
 import skypro.employee1.model.Employee1;
 
-import java.util.*;
+import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Iterator;
+import java.util.List;
+
 @Service
-public class Employee1ServiceImpl implements Employee1Service {
+public class Employee1ServiceMapImpl implements Employee1Service {
     private static final int COUNT_EMPLOYEE1 = 5;
     private List<Employee1> employee1s = new ArrayList<>(COUNT_EMPLOYEE1);
 
